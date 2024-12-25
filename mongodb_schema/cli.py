@@ -1,6 +1,6 @@
 import argparse
-from mongo_schema.exporter import MongoSchemaExporter
-from mongo_schema.utils import setup_logger
+from mongod_schema.exporter import MongoSchemaExporter
+from mongodb_schema.utils import setup_logger
 import logging
 
 
@@ -15,7 +15,7 @@ def main():
 
     args = parser.parse_args()
 
-    logger = setup_logger("mongo-schema-V2", level=logging.DEBUG if args.verbose else logging.INFO)
+    logger = setup_logger("mongodb-schema", level=logging.DEBUG if args.verbose else logging.INFO)
     exporter = MongoSchemaExporter(uri=args.uri, database=args.database, logger=logger)
 
     try:

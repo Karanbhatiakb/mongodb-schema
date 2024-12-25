@@ -1,11 +1,11 @@
-# mongo-schema-V2
+# mongodb-schema
 
 A Python SDK for exporting MongoDB schema metadata without copying the actual data.
 
 ## Installation
 
 ```bash
-pip install mongo-schema-V2
+pip install mongodb-schema
 ```
 
 ## Dependencies
@@ -43,13 +43,13 @@ pip install pymongo
 ### Command Line Interface
 
 ```bash
-mongo-schema-V2 --uri mongodb://user:password@database.host1.com:27017/admin --databases test2,testIgnore --output schema.json
+mongodb-schema --uri mongodb://user:password@database.host1.com:27017/admin --databases test2,testIgnore --output schema.json
 ```
 
 ### Python API
 
 ```python
-from mongo_schema.exporter import MongoSchemaExporter
+from mongodb-schema.exporter import MongoSchemaExporter
 
 # Initialize the exporter with MongoDB connection details
 exporter = MongoSchemaExporter(uri="mongodb://localhost:27017", database="test_db")

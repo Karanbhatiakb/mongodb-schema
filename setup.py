@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="mongo-schema-V2",
-    version="0.1.5",
+    name="mongodb-schema",
+    version="0.1.0",
     description="A Python SDK for exporting MongoDB schema metadata",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Karan Bhatia",
     author_email="karanbhatia.kb27@gmail.com",
-    url="https://github.com/karanbhatiakb/mongo-schema-V2/tree/master",
+    url="https://github.com/karanbhatiakb/mongodb-schema/tree/master",
     packages=find_packages(),
     install_requires=["pymongo", "bson"],
     entry_points={
         "console_scripts": [
-            "mongo-schema-V2=mongo_schema.cli:main",
+            "mongodb-schema=mongodb_schema.cli:main",
         ],
     },
     classifiers=[

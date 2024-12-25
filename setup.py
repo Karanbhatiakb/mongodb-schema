@@ -6,9 +6,9 @@ setup(
     description="A Python SDK for exporting MongoDB schema metadata",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your_email@example.com",
-    url="https://github.com/yourusername/pymongo-schema",
+    author="Karan Bhatia",
+    author_email="karanbhatia.kb27@gmail.com",
+    url="https://github.com/karanbhatiakb/mongo-schema-V2",
     packages=find_packages(),
     install_requires=["pymongo", "bson"],
     entry_points={

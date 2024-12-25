@@ -10,7 +10,7 @@ setup(
     author_email="karanbhatia.kb27@gmail.com",
     url="https://github.com/karanbhatiakb/mongodb-schema/tree/master",
     packages=find_packages(),
-    install_requires=["pymongo", "bson"],
+    install_requires=["pymongo"],
     entry_points={
         "console_scripts": [
             "mongodb-schema=mongodb_schema.cli:main",

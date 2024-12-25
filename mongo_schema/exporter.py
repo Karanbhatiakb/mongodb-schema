@@ -2,7 +2,7 @@ import json
 import logging
 from pymongo import MongoClient
 from bson import json_util
-from pymongo_schema.exceptions import SchemaExportError
+from mongo_schema.exceptions import SchemaExportError
 
 
 class MongoSchemaExporter:

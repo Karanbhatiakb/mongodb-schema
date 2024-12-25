@@ -1,6 +1,6 @@
 import argparse
-from pymongo_schema.exporter import MongoSchemaExporter
-from pymongo_schema.utils import setup_logger
+from mongo_schema.exporter import MongoSchemaExporter
+from mongo_schema.utils import setup_logger
 import logging
 
 
@@ -15,13 +15,13 @@ def main():
 
     args = parser.parse_args()
 
-    logger = setup_logger("pymongo-schema", level=logging.DEBUG if args.verbose else logging.INFO)
+    logger = setup_logger("mongo-schema-V2", level=logging.DEBUG if args.verbose else logging.INFO)
     exporter = MongoSchemaExporter(uri=args.uri, database=args.database, logger=logger)
 
     try:
         result = exporter.export_schema(output_file=args.output, sample_size=args.sample_size, output_format=args.format)
         if args.output:
-            logger.info(result)
+            logger.info(f"Schema exported successfully to {args.output}")
         else:
             logger.info("Schema Metadata:")
             print(result)

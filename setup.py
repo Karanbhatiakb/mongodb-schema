@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="pymongo-schema",
+    name="mongo-schema-V2",
     version="0.1.0",
     description="A Python SDK for exporting MongoDB schema metadata",
     long_description=open("README.md").read(),
@@ -13,7 +13,7 @@ setup(
     install_requires=["pymongo", "bson"],
     entry_points={
         "console_scripts": [
-            "pymongo-schema=pymongo_schema.cli:main",
+            "mongo-schema-V2=mongo_schema.cli:main",
         ],
     },
     classifiers=[

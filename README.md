@@ -49,7 +49,7 @@ mongodb-schema --uri mongodb://user:password@database.host1.com:27017/admin --da
 ### Python API
 
 ```python
-from mongodb-schema.exporter import MongoSchemaExporter
+from mongodb_schema.exporter import MongoSchemaExporter
 
 # Initialize the exporter with MongoDB connection details
 exporter = MongoSchemaExporter(uri="mongodb://localhost:27017", database="test_db")

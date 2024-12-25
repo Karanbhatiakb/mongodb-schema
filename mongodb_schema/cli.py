@@ -1,5 +1,5 @@
 import argparse
-from mongod_schema.exporter import MongoSchemaExporter
+from mongodb_schema.exporter import MongoSchemaExporter
 from mongodb_schema.utils import setup_logger
 import logging
 

@@ -8,6 +8,36 @@ A Python SDK for exporting MongoDB schema metadata without copying the actual da
 pip install mongo-schema-V2
 ```
 
+## Dependencies
+
+### Requirements.txt Setup
+
+Update your `requirements.txt` to include:
+
+```plaintext
+pymongo>=4.10.1
+```
+
+Note: Do not include the standalone `bson` package as it conflicts with `pymongo`.
+
+To regenerate requirements:
+```bash
+pip freeze > requirements.txt
+```
+
+To reinstall dependencies:
+```bash
+pip install --force-reinstall -r requirements.txt
+```
+
+### BSON Troubleshooting
+
+If you encounter BSON-related errors, run:
+```bash
+pip uninstall bson pymongo
+pip install pymongo
+```
+
 ## Usage
 
 ### Command Line Interface

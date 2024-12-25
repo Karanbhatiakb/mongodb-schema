@@ -8,7 +8,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Karan Bhatia",
     author_email="karanbhatia.kb27@gmail.com",
-    url="https://github.com/karanbhatiakb/mongo-schema-V2",
+    url="https://github.com/karanbhatiakb/mongo-schema-V2/tree/master",
     packages=find_packages(),
     install_requires=["pymongo", "bson"],
     entry_points={

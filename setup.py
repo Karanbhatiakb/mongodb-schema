@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="mongo-schema-V2",
-    version="0.1.4",
+    version="0.1.5",
     description="A Python SDK for exporting MongoDB schema metadata",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

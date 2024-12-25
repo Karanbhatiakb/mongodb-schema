@@ -43,7 +43,7 @@ pip install pymongo
 ### Command Line Interface
 
 ```bash
-mongo-schema-V2 export --uri mongodb://user:password@database.host1.com:27017/admin --databases test2,testIgnore --output schema.json
+mongo-schema-V2 --uri mongodb://user:password@database.host1.com:27017/admin --databases test2,testIgnore --output schema.json
 ```
 
 ### Python API

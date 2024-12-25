@@ -2,3 +2,4 @@
 .ENV
 .venv
 .VENV
+.idea
